@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .parent {
+            height: 400px;
+            width: 400px;
+            border: 5px solid slateblue;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow-y: scroll;
+        }
+
+        .short {
+            border: 2px solid blue;
+            height: 50px;
+            width: 100px;
+
+
+        }
+
+        .min {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exploring overflow visibility</h1>
+    <div class="parent">
+        <p class="content-resource">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iusto sit voluptatibus
+            aperiam qui delectus, nam provident facere ipsam? Non esse nisi sunt culpa vero labore, cum pariatur nam
+            perspiciatis voluptate expedita, tenetur alias! Dolorem neque obcaecati incidunt eaque eveniet, velit
+            asperiores optio voluptatibus quas sint vitae beatae in eum laboriosam dolorum tempora magni quasi provident
+            doloremque, quibusdam perspiciatis a. Voluptate, veritatis, perspiciatis eos, at exercitationem quaerat illo
+            dignissimos facilis dolor quam earum temporibus fugiat minus esse aspernatur similique incidunt molestiae
+            quisquam veniam quibusdam velit nostrum distinctio. Eligendi, voluptatem dolores veritatis quod sunt qui sed
+            temporibus explicabo quas vitae eos quaerat quam eius animi ipsam itaque. Saepe dolorem aliquam mollitia
+            laboriosam dicta dignissimos? Veniam eum provident commodi modi harum error. Odio quisquam unde, quasi fugit
+            cum id ex dolor vitae distinctio accusantium maxime tenetur ipsum voluptatum exercitationem. Tempore
+            pariatur aliquam dolore consequuntur eligendi voluptatibus dignissimos mollitia atque? Labore, id
+            odit.(lorem 150) Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores enim labore, magni quo
+            minima expedita maxime pariatur quaerat suscipit voluptate odit libero odio, obcaecati asperiores nam saepe.
+            Officia fugiat dolor veniam magni ducimus ullam aut nobis minima consectetur voluptatibus quis soluta modi
+            atque expedita velit nihil quibusdam, omnis aliquam repudiandae!</p>
+    </div>
+    <div class="short">
+        <p class="min" title="Lorem ipsum dolor sit, amet consectetur adipisicing.">Lorem ipsum dolor sit, amet
+            consectetur adipisicing.</p>
+    </div>
+</body>
+
+</html>
